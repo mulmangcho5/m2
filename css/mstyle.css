@@ -368,6 +368,7 @@ footer {
 @media screen and (max-width:400px) {
     .wrapper{
         width: 360px;
+        margin: 0 auto;
     }
     *{
         text-decoration: none;
