@@ -485,19 +485,19 @@ footer {
     }
     .banner_text:nth-child(1)>a {
         background: url(../images/main_icon01.png) no-repeat right center;
-        background-size: 50px;
+        background-size: 35px;
     }
     .banner_text:nth-child(2)>a {
         background: url(../images/main_icon02.png) no-repeat right center;
-        background-size: 50px;
+        background-size: 35px;
     }
     .banner_text:nth-child(3)>a {
         background: url(../images/main_icon03.png) no-repeat right center;
-        background-size: 50px;
+        background-size: 35px;
     }
     .banner_text:nth-child(4)>a {
         background: url(../images/main_icon04.png) no-repeat right center;
-        background-size: 50px;
+        background-size: 35px;
     }
     /* main-subslideshow2 */
     .slideshow2 {
