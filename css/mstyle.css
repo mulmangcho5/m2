@@ -20,6 +20,7 @@ header {
     /* background-color: pink; */
     text-align: center;
     line-height: 50px;
+    box-sizing: border-box;
 }
 .bar_icon a {
     font-size: 200%;
@@ -31,7 +32,9 @@ header {
     /* background-color: lightseagreen; */
     float: left;
     margin: 0 auto;
+    padding: 10px;
     text-align: center;
+    box-sizing: border-box;
 }
 #logo img {
     width: 180px;
@@ -44,6 +47,7 @@ header {
     float: right;
     /* background-color: lightskyblue; */
     text-align: center;
+    box-sizing: border-box;
 }
 .user_icon a {
     font-size: 200%;
