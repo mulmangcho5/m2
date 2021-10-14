@@ -554,7 +554,7 @@ footer {
         align-items: center;
     }
     input[type='text'] {
-        width: 300px;   /* 반으로  줄임*/
+        width: 240px;   /* 반으로  줄임*/
         height: 25px;
         outline: none;
         border: none;
@@ -569,6 +569,8 @@ footer {
         align-items: center;
     }
     button {
+        width: 30px;
+        height: 30px;
         margin-left: 47px;  /* 돋보기 오른쪽으로 */
         padding: 0;
         border: none;
