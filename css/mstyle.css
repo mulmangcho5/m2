@@ -398,16 +398,16 @@ footer {
         color:#555555;
     }
     #logo {
-        width: 668px;
-        height: 50px;
+        width: 250px;   /* 반으로  줄임*/
+        height: 30px;
         /* background-color: lightseagreen; */
         float: left;
         margin: 0 auto;
         text-align: center;
     }
     #logo img {
-        width: 180px;
-        height: 50px;
+        width: 70px;   /* 반으로  줄임*/
+        height: 30px;
     }
     .user_icon {
         width: 50px;
@@ -540,7 +540,7 @@ footer {
         padding-top: 10px;
     }
     .search-box {
-        width: 700px;
+        width: 330px;   /* 반으로  줄임*/
         height: 35px;
         margin: 0 auto;
         background-color: #ffffff;
@@ -550,7 +550,7 @@ footer {
         align-items: center;
     }
     input[type='text'] {
-        width: 600px;
+        width: 300px;   /* 반으로  줄임*/
         height: 25px;
         outline: none;
         border: none;
