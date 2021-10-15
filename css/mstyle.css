@@ -583,7 +583,7 @@ footer {
     /* cate_slides */
     .cate_slides{
         width: 360px;
-        height: 187px;
+        height: 140px;
         background-color: #efefef;
         padding: 0;
         overflow: hidden;
@@ -596,8 +596,9 @@ footer {
     .cate_wrapper{
         background-color: #ffffff;
         width: 1600px;
-        height: 165px;
+        height: 110px;
         border: 1px solid #111111;
+        padding-top: 16px;
     }
     .cate {                 /* 5개씩 넣어서 1칸씩 이동 */
         float: left;
@@ -605,6 +606,10 @@ footer {
         padding: 5px;
         /* box-sizing: border-box; */
         display: table;
+    }
+    .cate img {
+        width: 50px;
+        height: 50px;
     }
     .cate a{
         text-align: center; 
@@ -617,7 +622,7 @@ footer {
         position: absolute;
         top: 50%;
         left: 0;
-        margin-top: -30px;
+        margin-top: -20px;
         padding-left: 10px;
     
     }
@@ -625,7 +630,7 @@ footer {
         position: absolute;
         top: 50%;
         right: 0;
-        margin-top: -30px;
+        margin-top: -20px;
         padding-left: 10px;
     }
     
@@ -653,12 +658,13 @@ footer {
         /* box-sizing: border-box; */
     }
     .imgshop{
+        width: 135px;
         border: 1px solid #111111;
         border-radius: 20px;
     }
     .imgshop img {
         width: 100%;
-        height: 350px;
+        height: 190px;
         border-radius: 20px 20px 0 0;
     }
     .imgshop p {
@@ -670,16 +676,20 @@ footer {
     /* guidelist */
     .guidelist{
         clear: both;
-        width: 360px;
+        width: 600px;
         
     }
     .guide {
-        width: 50%;
+        width: 30%;
         background-color: #ffffff;
         padding: 20px;
         /* box-sizing: border-box; */
         float: left;
         text-align: center;
+    }
+    .guide img {
+        width: 100%;
+        height: 100%;
     }
     
     
