@@ -12,11 +12,78 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 좌측 메뉴를 보여줄 레이아웃 -->
+    <div id="mySidenav" class="sidenav">
+        <div class="sidewrapper">
+            <a href="#" class="closebtn" onclick="closeNav();">&times;</a><br>
+            <h1>
+                <img src="images/logo.jpg" alt="">
+            </h1>
+
+            <p class="orange">전통 종합시장 소개</p>
+            <ul>
+                <li>전통종합시장 소개</li>
+                <li>상인회 소개</li>
+                <li>제로페이 소개</li>
+                <li>&nbsp;</li>
+            </ul>
+
+            <p class="green">점포 소개</p>
+            <ul>
+                <li>도/소매업</li>
+                <li>수산물</li>
+                <li>과일/야채</li>
+                <li>음식점</li>
+                <li>정육점</li>
+                <li>의류/잡화</li>
+                <li>야채/농산물</li>
+                <li>식품/가공식품</li>
+                <li>마트</li>
+                <li>생활/잡화</li>
+                <li>통신/의료기기</li>
+                <li>기타</li>
+            </ul>
+
+            <p class="blue">교통 정보</p>
+            <ul>
+                <li>오시는길</li>
+                <li>주차장 이용안내</li>
+            </ul>
+
+            <p class="violet">고객서비스</p>
+            <ul>
+                <li>배송서비스</li>
+                <li>이벤트</li>
+                <li>공지사항</li>
+                <li>로그인</li>
+            </ul>
+
+            <ul>
+                <li class="mypage">
+                    <figure>
+                        <img src="images/마이아이콘1.png" alt="">
+                        <figcaption>마이페이지</figcaption>
+                    </figure>
+                </li>
+                <li class="mypage">
+                    <figure>
+                        <img src="images/마이아이콘2.png" alt="">
+                        <figcaption>고객센터</figcaption>
+                    </figure>
+                </li>
+                <li class="user">이용약관</li>
+                <li class="user">개인정보처리지침</li>
+            </ul>
+        </div>
+    </div>
+
+
+
     <div class="wrapper"> <!-- 전체 영역 -->
 
         <header>
             <div class="bar_icon">
-                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="#" onclick="openNav();"><i class="fas fa-bars"></i></a>
             </div>
             <div id="logo">
                 <img src="images/logo.jpg" alt="logo">
@@ -214,5 +281,9 @@
             </footer>
         </div>
     </div> <!-- wrapper -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mjscript.js"></script>
 </body>
 </html>
