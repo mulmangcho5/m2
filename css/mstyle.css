@@ -320,7 +320,14 @@ button {
     
     text-align: center;
 }
-
+.swiper-button-prev {
+    transform: scale(0.5);
+    color: tomato;
+}
+.swiper-button-next {
+    transform: scale(0.5);
+    color: tomato;
+}
 
 
 
@@ -936,7 +943,14 @@ body{
 .swiper-slide{
     text-align: center;
 }
-
+.swiper-button-prev {
+    transform: scale(0.3);
+    color: tomato;
+}
+.swiper-button-next {
+    transform: scale(0.3);
+    color: tomato;
+}
 
 
 
