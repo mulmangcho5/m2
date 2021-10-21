@@ -51,6 +51,37 @@ header {
     color:#555555;
 }
 
+
+
+
+
+/* 스와이퍼 (슬라이드 넣기) */
+body{
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.swiper-container {
+    width: 768px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myslide img{
+    width: 768px;
+}
+
+
+
+
 /* main - slide 영역 */
 .slideshow {
     width: 768px; /* 태블릿 기준 초기값 */
@@ -573,6 +604,40 @@ figure{
         font-size: 200%;
         color:#555555;
     }
+
+
+
+
+
+    /* 스와이퍼 (슬라이드 넣기) */
+body{
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.swiper-container {
+    width: 360px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myslide img{
+    width: 360px;
+}
+
+
+
+
+
+
     
     /* main - slide 영역 */
     .slideshow {
@@ -976,7 +1041,7 @@ figure{
         margin-top: 0;
     }
     figcaption{
-        font-size: 10px;
+        
     }
 
 

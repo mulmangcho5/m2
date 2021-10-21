@@ -1,0 +1,35 @@
+html, body{
+    position: relative;
+}
+body {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 24px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .swiper-wrapper :first-child{
+    background-color: red;
+}
+.swiper-wrapper :nth-child(2){
+    background-color: orange;  
+}
+.swiper-wrapper :nth-child(3){
+    background-color: yellow;  
+}
+.swiper-wrapper :nth-child(4){
+    background-color: green;  
+} */

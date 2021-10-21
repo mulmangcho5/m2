@@ -10,6 +10,7 @@
     <!-- 태블릿 사이즈 : PC화면에서 보고-->
     <!-- 모바일 사이즈 : 360px : 폰사이즈가 다른 사람 css 사이즈 확인-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <!-- 좌측 메뉴를 보여줄 레이아웃 -->
@@ -94,7 +95,25 @@
         </header>
 
         <div class="main">
-            <div class="slideshow">
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide myslide">
+                        <img src="images/banner1_800x487.png" alt="slide1">
+                    </div>
+                    <div class="swiper-slide myslide">
+                        <img src="images/banner2_800x487.png" alt="slide1">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+
+
+            <!-- 첫번째 슬라이드 -->
+            <!-- <div class="slideshow">
                 <div class="myslide">
                     <img src="images/banner1_800x487.png" alt="slide1">
                 </div>
@@ -102,7 +121,7 @@
                     <label></label>
                     <label></label>
                 </p>
-            </div>
+            </div> -->
 
 
             <div class="main_banner">
@@ -284,6 +303,7 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/mjscript.js"></script>
 </body>
 </html>
