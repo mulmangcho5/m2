@@ -930,6 +930,11 @@ body{
     margin: 10px 0;
     background-color: #ffffff;
 }
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .swiper-slide{
     text-align: center;
 }
