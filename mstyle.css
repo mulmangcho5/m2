@@ -1,0 +1,1197 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    width: 768px; /* ipad css 가로 사이즈 */
+    background-color:#ffffff;
+    overflow: auto; /* float 사용시 부모영역 벗어날 수 있기에 */
+}
+.bar_icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    /* background-color: pink; */
+    text-align: center;
+    line-height: 50px;
+}
+.bar_icon a {
+    font-size: 200%;
+    color:#555555;
+}
+#logo {
+    width: 668px;
+    height: 50px;
+    /* background-color: lightseagreen; */
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+}
+#logo img {
+    width: 180px;
+    height: 50px;
+}
+.user_icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+    /* background-color: lightskyblue; */
+    text-align: center;
+}
+.user_icon a {
+    font-size: 200%;
+    color:#555555;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 스와이퍼 (슬라이드 넣기) */
+body{
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.swiper-container {
+    width: 768px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myslide img{
+    width: 768px;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: #666666;
+}
+.swiper-pagination-bullet-active {
+    background-color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+/* main - slide 영역 */
+.slideshow {
+    width: 768px; /* 태블릿 기준 초기값 */
+    margin: 0;
+    padding: 0;
+    /* 동작시 포지션 추가 */
+    position: relative; /* 도형과 겹치기 위해 */
+}
+.slideshow img{
+    width: 100%;
+}
+.slideshow .mypos {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.slideshow label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.mypos>label:nth-child(1) {
+    border: none;
+    border: 2px solid crimson;
+    background-color: crimson;
+}
+/* main - banner */
+.main_banner {
+    width: 768px;
+    padding: 0;
+    /* 자식태그 float배치시 벗어날 수 있음 */
+    overflow: auto;
+}
+
+.banner_text {
+    /* 다단배치 */
+    width: 50%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    /* box-sizing:border-box; 내부 컨텐츠 유지 */
+    border: 1px solid #efefef;
+    background-color: #ffffff;
+    /* line-height: 100px; 한줄만 가능 */
+    display: table; /* 2줄 이상도 가능 */
+    margin: 0;
+}
+.banner_text a {
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner_text:nth-child(1)>a {
+    background: url(../images/main_icon01.png) no-repeat right center;
+    background-size: 50px;
+}
+.banner_text:nth-child(2)>a {
+    background: url(../images/main_icon02.png) no-repeat right center;
+    background-size: 50px;
+}
+.banner_text:nth-child(3)>a {
+    background: url(../images/main_icon03.png) no-repeat right center;
+    background-size: 50px;
+}
+.banner_text:nth-child(4)>a {
+    background: url(../images/main_icon04.png) no-repeat right center;
+    background-size: 50px;
+}
+/* main-subslideshow2 */
+.slideshow2 {
+    width: 768px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.slideshow2 img {
+    width: 768px;
+}
+.banpos {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+.banpos label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid #666666;
+}
+.banpos>label:nth-child(1) {
+    background-color: limegreen;
+    border: 2px solid limegreen;
+}
+
+/* main-search */
+.main_search {
+    width: 768px;
+    height: 60px;
+    background-color: #efefef;
+}
+.search-out {
+    background-color: #f15d45;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+.search-box {
+    width: 700px;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid green;
+    line-height: 35px;
+    display: flex;      /* 돋보기모양 세로 정렬 */
+    align-items: center;
+}
+input[type='text'] {
+    width: 600px;
+    height: 25px;
+    outline: none;
+    border: none;
+}
+#search {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #111111;
+    display: flex;      /* 돋보기 중앙위치 */
+    justify-content: center;
+    align-items: center;
+}
+button {
+    margin-left: 47px;  /* 돋보기 오른쪽으로 */
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+
+
+/* cate_slides */
+.cate_slides{
+    width: 768px;
+    height: 187px;
+    background-color: #efefef;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 15px;
+    position: relative; /* cate_prev,cate_next 의 부모 */   
+}
+.cate_slides a {
+    color: #111111;
+}
+.cate_wrapper{
+    background-color: #ffffff;
+    width: 1600px;
+    height: 165px;
+    border: 1px solid #111111;
+}
+.cate {                 /* 5개씩 넣어서 1칸씩 이동 */
+    float: left;
+    margin: 0 10px;
+    padding: 5px;
+    /* box-sizing: border-box; */
+    display: table;
+}
+.cate a{
+    text-align: center; 
+    display: table-cell;
+    vertical-align: middle;
+    color: #111111;
+    
+}
+
+.cate_prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+    padding-left: 10px;
+
+}
+.cate_next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -30px;
+    padding-left: 10px;
+}
+
+
+
+/* 3번째 스와이퍼 수정 CSS */
+.swiper-container5 {
+    width: 768px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
+.swiper-slide{
+    
+    text-align: center;
+}
+.swiper-button-prev {
+    transform: scale(0.5);
+    color: tomato;
+}
+.swiper-button-next {
+    transform: 0.5;
+    color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shoplist */
+.shoplist{
+    width: 768px;
+    background-color: #ffffff;
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #111111;
+}
+.shoptitle {
+    padding: 20px 0 0 20px;
+}
+.shoptitle img {
+    width: 25px;
+}
+.myshop_wrapper{
+    overflow: auto;
+}
+.myshop{
+    float: left;
+    width: 50%;
+    padding: 30px;
+    /* box-sizing: border-box; */
+}
+.imgshop{
+    border: 1px solid #111111;
+    border-radius: 20px;
+}
+.imgshop img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px 20px 0 0;
+}
+.imgshop p {
+    text-align: center;
+}
+
+
+
+/* guidelist */
+.guidelist{
+    clear: both;
+    width: 768px;
+    
+}
+.guide {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    /* box-sizing: border-box; */
+    float: left;
+    text-align: center;
+}
+
+
+
+
+
+/* 하단메뉴 footer */
+.footer_space {
+    width: 768px;
+    height: 130px;
+    clear: both;
+    background-color: #ffffff;
+}
+footer {
+    width: 768px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+.bottom_menu {      /* table */
+    width: 768px;
+    border-top: 1px solid #111111;
+    background-color: #efefef;
+    margin: 0;
+    display: table;
+}
+.bottom_menu a {    /* table cell */
+    width: 25%;
+    /* box-sizing: border-box; */
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    display: table-cell;
+}
+.bottom_menu a img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/* 좌측 햄버거 누르면 메뉴 */
+.sidenav {  
+    width: 0px;             /* 클래스 추가 될씨 720px (showLeftMenu) */
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow-x: hidden;     /* 가로방향은 메뉴가 넘치지 않게 보임 */   
+    transition: width 1.5s;
+}
+.sidewrapper {
+    background-color: #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;         /* closebtn 겹치기 */
+}
+.sidewrapper h1{
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    
+}
+.sidewrapper h1 img {
+    width: 120px;
+    height: 40px;
+}
+.sidewrapper>p{
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 20px 30px;
+    clear: both;
+}
+.sidewrapper .orange{
+    background-color: #fdb223;
+}
+.sidewrapper .green{
+    background-color: limegreen;
+}
+.sidewrapper .blue{
+    background-color: lightskyblue;
+}
+.sidewrapper .violet{
+    background-color: violet;
+}
+.sidenav a {
+    display: block;
+    padding: 20px 8px 0px 8px;
+    font-size: 30px;
+    color: #111111;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    
+}
+.sidewrapper ul {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+}
+.sidewrapper ul li  {
+    box-sizing: border-box;
+    color: #111111;
+    border: 2px solid #efefef;
+    width: 50%;
+    float: left;
+    padding: 10px 10px 10px 30px;
+
+}
+.mypage {
+    height: 100px;
+    text-align: center;
+}
+.mypage img {
+    width: 40px;
+}
+.user {
+    text-align: center;
+}
+figure{
+    margin-top: 0;
+}
+
+
+
+.showLeftMenu {
+    width: 720px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* (모바일) - 360px(375px) or 411px */
+@media screen and (max-width:400px) {
+    .wrapper{
+        width: 360px;
+        margin: 0 auto;
+    }
+    *{
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    body {
+        margin: 0;
+        background-color: #efefef;
+    }
+    
+    header {
+        width: 360px; /* ipad css 가로 사이즈 */
+        background-color:#ffffff;
+        overflow: auto; /* float 사용시 부모영역 벗어날 수 있기에 */
+    }
+    .bar_icon {
+        width: 50px;
+        height: 50px;
+        float: left;
+        /* background-color: pink; */
+        text-align: center;
+        line-height: 50px;
+    }
+    .bar_icon a {
+        font-size: 200%;
+        color:#555555;
+    }
+    #logo {
+        width: 250px;   /* 반으로  줄임*/
+        height: 30px;
+        /* background-color: lightseagreen; */
+        float: left;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+    #logo img {
+        width: 70px;   /* 반으로  줄임*/
+        height: 30px;
+    }
+    .user_icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        float: right;
+        /* background-color: lightskyblue; */
+        text-align: center;
+    }
+    .user_icon a {
+        font-size: 200%;
+        color:#555555;
+    }
+
+
+
+
+
+    /* 스와이퍼 (슬라이드 넣기) */
+body{
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.swiper-container {
+    width: 360px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myslide img{
+    width: 360px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    color: #666666;
+}
+.swiper-pagination-bullet-active {
+    background-color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+    
+    /* main - slide 영역 */
+    .slideshow {
+        width: 360px; /* 태블릿 기준 초기값 */
+        margin: 0;
+        padding: 0;
+        /* 동작시 포지션 추가 */
+        position: relative; /* 도형과 겹치기 위해 */
+    }
+    .slideshow img{
+        width: 100%;
+    }
+    .slideshow .mypos {
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        text-align: center;
+    }
+    .slideshow label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #666666;
+        border-radius: 50%;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    .mypos>label:nth-child(1) {
+        border: none;
+        border: 2px solid crimson;
+        background-color: crimson;
+    }
+    /* main - banner */
+    .main_banner {
+        width: 360px;
+        padding: 0;
+        /* 자식태그 float배치시 벗어날 수 있음 */
+        overflow: auto;
+    }
+    
+    .banner_text {
+        /* 다단배치 */
+        width: 50%;
+        height: 100px;
+        float: left;
+        text-align: center;
+        /* box-sizing:border-box; 내부 컨텐츠 유지 */
+        border: 1px solid #efefef;
+        background-color: #ffffff;
+        /* line-height: 100px; 한줄만 가능 */
+        display: table; /* 2줄 이상도 가능 */
+        margin: 0;
+    }
+    .banner_text a {
+        text-decoration: none;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    .banner_text:nth-child(1)>a {
+        background: url(../images/main_icon01.png) no-repeat right center;
+        background-size: 40px;
+    }
+    .banner_text:nth-child(2)>a {
+        background: url(../images/main_icon02.png) no-repeat right center;
+        background-size: 40px;
+    }
+    .banner_text:nth-child(3)>a {
+        background: url(../images/main_icon03.png) no-repeat right center;
+        background-size: 40px;
+    }
+    .banner_text:nth-child(4)>a {
+        background: url(../images/main_icon04.png) no-repeat right center;
+        background-size: 40px;
+    }
+    /* main-subslideshow2 */
+    .slideshow2 {
+        width: 360px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .slideshow2 img {
+        width: 360px;
+    }
+    .banpos {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 10px;
+        text-align: left;
+        cursor: pointer;
+    }
+    .banpos label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin: 5px;
+        border: 2px solid #666666;
+    }
+    .banpos>label:nth-child(1) {
+        background-color: limegreen;
+        border: 2px solid limegreen;
+    }
+    
+    /* main-search */
+    .main_search {
+        width: 360px;
+        height: 60px;
+        background-color: #efefef;
+    }
+    .search-out {
+        background-color: #f15d45;
+        height: 50px;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+    .search-box {
+        width: 330px;   /* 반으로  줄임*/
+        height: 35px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid green;
+        line-height: 35px;
+        display: flex;      /* 돋보기모양 세로 정렬 */
+        align-items: center;
+    }
+    input[type='text'] {
+        width: 240px;   /* 반으로  줄임*/
+        height: 25px;
+        outline: none;
+        border: none;
+    }
+    #search {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #111111;
+        display: flex;      /* 돋보기 중앙위치 */
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+        margin-left: 47px;  /* 돋보기 오른쪽으로 */
+        padding: 0;
+        border: none;
+        background-color: #ffffff;
+        color: #ffffff;
+    }
+    
+    
+    
+    /* cate_slides */
+    .cate_slides{
+        width: 360px;
+        height: 140px;
+        background-color: #efefef;
+        padding: 0;
+        overflow: hidden;
+        padding-top: 15px;
+        position: relative; /* cate_prev,cate_next 의 부모 */   
+    }
+    .cate_slides a {
+        color: #111111;
+    }
+    .cate_wrapper{
+        background-color: #ffffff;
+        width: 1600px;
+        height: 110px;
+        border: 1px solid #111111;
+        padding-top: 16px;
+    }
+    .cate {                 /* 5개씩 넣어서 1칸씩 이동 */
+        float: left;
+        margin: 0 10px;
+        padding: 5px;
+        /* box-sizing: border-box; */
+        display: table;
+    }
+    .cate img {
+        width: 50px;
+        height: 50px;
+    }
+    .cate a{
+        text-align: center; 
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+    
+    .cate_prev {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -20px;
+        padding-left: 10px;
+    
+    }
+    .cate_next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -20px;
+        padding-left: 10px;
+    }
+    
+
+
+
+/* 3번째 스와이퍼 수정 CSS */
+.swiper-container5 {
+    width: 360px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
+.swiper-wrapper{
+    margin-top: 13px;
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-button-prev {
+    transform: scale(0.3);
+    color: tomato;
+}
+.swiper-button-next {
+    transform: 0.3;
+    color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    /* shoplist */
+    .shoplist{
+        width: 360px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #111111;
+    }
+    .shoptitle {
+        padding: 20px 0 0 20px;
+    }
+    .shoptitle img {
+        width: 25px;
+    }
+    .myshop_wrapper{
+        overflow: auto;
+    }
+    .myshop{
+        float: left;
+        width: 50%;
+        padding: 30px;
+        /* box-sizing: border-box; */
+    }
+    .imgshop{
+        width: 135px;
+        border: 1px solid #111111;
+        border-radius: 20px;
+    }
+    .imgshop img {
+        width: 100%;
+        height: 190px;
+        border-radius: 20px 20px 0 0;
+    }
+    .imgshop p {
+        text-align: center;
+    }
+    
+    
+    
+    /* guidelist */
+    .guidelist{
+        clear: both;
+        width: 600px;
+        
+    }
+    .guide {
+        width: 30%;
+        background-color: #ffffff;
+        padding: 20px;
+        /* box-sizing: border-box; */
+        float: left;
+        text-align: center;
+    }
+    .guide img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    
+    
+    /* 하단메뉴 footer */
+    .footer_space {
+        width: 360px;
+        height: 130px;
+        clear: both;
+        background-color: #ffffff;
+    }
+    footer {
+        width: 360px;
+        clear: both;
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+    .bottom_menu {      /* table */
+        width: 360px;
+        border-top: 1px solid #111111;
+        background-color: #efefef;
+        margin: 0;
+        display: table;
+    }
+    .bottom_menu a {    /* table cell */
+        width: 25%;
+        /* box-sizing: border-box; */
+        display: inline-block;
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+        display: table-cell;
+    }
+    .bottom_menu a img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+
+
+
+        /* 좌측 햄버거 누르면 메뉴 */
+    .sidenav {  
+        width: 0px;             /* 클래스 추가 될씨 720px (showLeftMenu) */
+        height: 100%;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        overflow-x: hidden;     /* 가로방향은 메뉴가 넘치지 않게 보임 */   
+        transition: width 1.5s;
+    }
+    .sidewrapper {
+        background-color: #ffffff;
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;         /* closebtn 겹치기 */
+
+        /* 모바일 */
+        font-size: 12px;
+    }
+    .sidewrapper h1{
+        margin: 0;
+        width: 100%;
+        height: 40px;
+        
+    }
+    .sidewrapper h1 img {
+        width: 120px;
+        height: 40px;
+    }
+    .sidewrapper>p{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0 20px 30px;
+        clear: both;
+    }
+    .sidewrapper .orange{
+        background-color: #fdb223;
+    }
+    .sidewrapper .green{
+        background-color: limegreen;
+    }
+    .sidewrapper .blue{
+        background-color: lightskyblue;
+    }
+    .sidewrapper .violet{
+        background-color: violet;
+    }
+    .sidenav a {
+        display: block;
+        padding: 20px 8px 0px 8px;
+        font-size: 30px;
+        color: #111111;
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        
+    }
+    .sidewrapper ul {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .sidewrapper ul li  {
+        box-sizing: border-box;
+        color: #111111;
+        border: 2px solid #efefef;
+        width: 50%;
+        float: left;
+        padding: 10px 10px 10px 30px;
+
+    }
+    .mypage {
+        height: 100px;
+        text-align: center;
+    }
+    .mypage img {
+        width: 40px;
+    }
+    .user {
+        text-align: center;
+    }
+    figure{
+        margin-top: 0;
+    }
+    figcaption{
+        
+    }
+
+
+
+    .showLeftMenu {
+        width: 320px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* 미디어쿼리 적용 (태블릿) */
+@media screen and (max-width:800px) {
+
+}
